@@ -7,10 +7,10 @@ Use this worksheet to review and reinforce your understanding of Python data con
 ## 🧠 Section 1: Lists
 
 1. What method adds an item to the end of a list?  
-   `Answer:` ____________________________
+   `Answer:` list.append(value)
 
 2. How can you remove an item from a list by value?  
-   `Answer:` ____________________________
+   `Answer:` list.remove(value
 
 3. What’s the result of this code?
 
@@ -20,7 +20,7 @@ nums.append(8)
 print(nums)
 ```
 
-   `Answer:` ____________________________
+   `Answer:` 2,4,6,8
 
 ---
 
@@ -31,16 +31,20 @@ print(nums)
 # Add another food to the list.
 # Remove one item and print the list.
 ```
-
+```python
+food = ['pizza','pasta','steak']
+food.append('burgers')
+food.remove('pasta')
+```
 ---
 
 ## 🔒 Section 2: Tuples
 
 4. What is a key difference between a list and a tuple?  
-   `Answer:` ____________________________
+   `Answer:` lists can be changed after creating tuples can't be
 
 5. Can you change the contents of a tuple once it is created? Why or why not?  
-   `Answer:` ____________________________
+   `Answer:` no lists are immutable
 
 ---
 
@@ -50,7 +54,11 @@ print(nums)
 # Create a tuple with your favorite 3 numbers.
 # Unpack it into three variables and print each.
 ```
-
+```python
+numbers = ( 6 , 88 , 3)
+for num in numbers:
+   print(num)
+```
 ---
 
 ## 🔑 Section 3: Dictionaries
@@ -59,7 +67,7 @@ print(nums)
    `Answer:` ____________________________
 
 7. How do you loop through both keys and values in a dictionary?  
-   `Answer:` ____________________________
+   `Answer:` for key , value in dictionary.items():
 
 ---
 
@@ -69,11 +77,15 @@ print(nums)
 # Create a dictionary with keys: 'name', 'age', and 'hobby'.
 # Print each key and value in the format "key: value".
 ```
-
+```python
+about_me = {'Name: ' , 'Dane Fitzgerald' , 'Age: ' : 26 , 'Hobby: ' : 'Golf'}
+for key , value in about_me.items():
+   print(key, value)
+```
 ---
 
 ## 🧾 Submit Checklist
 
-- [ ] I practiced creating and modifying lists.
-- [ ] I understand how tuples are different from lists.
-- [ ] I accessed and looped through dictionary items.
+- [Y] I practiced creating and modifying lists.
+- [Y] I understand how tuples are different from lists.
+- [Y] I accessed and looped through dictionary items.
